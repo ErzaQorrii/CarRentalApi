@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "04ae3c63-a2df-42ed-95c0-f9f9c583f0c7",
+		"name": "CarRentalApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9443685"
+	},
+	"item": [
+		{
+			"name": "1. Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\":\"John Doe\",\r\n    \"email\":\"john@doe.com\",\r\n    \"username\":\"johndoe\",\r\n    \"password\":\"password1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/api/register",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"johndoe\",\r\n    \"password\":\"password1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/api/login",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. My Profile",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2JmNTUxNDRjOGFjZGRmMjMyOTIyNDUiLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpYXQiOjE3NDA1OTI0NjksImV4cCI6MTc0MDU5NjA2OX0.3nLK2jbwHhXZ6oicTHD8HHC1BxrMxBH4oTVHWSbsd4c",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/api/my-profile",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"my-profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. Rental Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{BaseUrl}}/api/rental-cars?order=desc",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"api",
+						"rental-cars"
+					],
+					"query": [
+						{
+							"key": "color",
+							"value": "white",
+							"disabled": true
+						},
+						{
+							"key": "number_of_seats",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "steering_type",
+							"value": "manual",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "2020",
+							"disabled": true
+						},
+						{
+							"key": "order",
+							"value": "desc",
+							"description": "Orders by price."
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2JmNTUxNDRjOGFjZGRmMjMyOTIyNDUiLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpYXQiOjE3NDA1OTI0NjksImV4cCI6MTc0MDU5NjA2OX0.3nLK2jbwHhXZ6oicTHD8HHC1BxrMxBH4oTVHWSbsd4c",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "https://localhost:5000",
+			"type": "string"
+		}
+	]
+}
