@@ -15,6 +15,5 @@ async function getFilteredCars(filters = {}) {
   }
 }
 module.exports = {
-  addCar,
   getFilteredCars,
 };

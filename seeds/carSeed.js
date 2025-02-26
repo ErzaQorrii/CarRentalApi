@@ -138,6 +138,7 @@ async function seedDatabase() {
   try {
     console.log("Deleting existing cars...");
     await mongodb.collection("cars").deleteMany({});
+    await mongodb.collection("users").deleteMany({})
 
     console.log("Inserting new car data...");
     await mongodb.collection("cars").insertMany(cars);
