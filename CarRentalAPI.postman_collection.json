@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f45deddb-b1b2-4a68-8ab7-cebfe4c39d92",
+		"_postman_id": "0afd81db-1bc1-4757-ab11-5d2a20e46e81",
 		"name": "CarRentalApi",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "39853987"
@@ -169,7 +169,7 @@
 	"variable": [
 		{
 			"key": "BaseUrl",
-			"value": "https://localhost:5000",
+			"value": "http://localhost:5000",
 			"type": "string"
 		}
 	]
