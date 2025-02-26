@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "04ae3c63-a2df-42ed-95c0-f9f9c583f0c7",
+		"_postman_id": "f45deddb-b1b2-4a68-8ab7-cebfe4c39d92",
 		"name": "CarRentalApi",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "9443685"
+		"_exporter_id": "39853987"
 	},
 	"item": [
 		{
@@ -68,7 +68,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2JmNTUxNDRjOGFjZGRmMjMyOTIyNDUiLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpYXQiOjE3NDA1OTI0NjksImV4cCI6MTc0MDU5NjA2OX0.3nLK2jbwHhXZ6oicTHD8HHC1BxrMxBH4oTVHWSbsd4c",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2N2JmN2JiODBmYzQyMWQwYjliMTk2NDYiLCJ1c2VybmFtZSI6ImpvaG5kb2UiLCJpYXQiOjE3NDA2MDIzMDMsImV4cCI6MTc0MDYwNTkwM30.c4LOV4zHSfnVZhTUmn5X5yh3zDGJdmhxv6QUn0eFSnQ",
 							"type": "string"
 						}
 					]
